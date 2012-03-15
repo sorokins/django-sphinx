@@ -191,7 +191,7 @@ def to_sphinx(value):
     return int(value)
 
 class SphinxQuerySet(object):
-    available_kwargs = ('rankmode', 'mode', 'weights', 'maxmatches', 'passages', 'passages_opts', 'limit')
+    available_kwargs = ('rankmode', 'mode', 'weights', 'maxmatches', 'passages', 'passages_opts', 'limit', 'offset')
     
     def __init__(self, model=None, using=None, **kwargs):
         self._select_related        = False
